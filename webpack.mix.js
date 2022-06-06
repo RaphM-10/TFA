@@ -1,4 +1,10 @@
 const mix = require('laravel-mix');
+//Erreur dans le warnings
+mix.webpackConfig(
+  {stats:{
+    children:true,}
+  }
+);
 
 /*
  |--------------------------------------------------------------------------
