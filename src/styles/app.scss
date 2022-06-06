@@ -99,11 +99,6 @@ p{
     text-decoration: none;
     position: absolute;
     bottom: 48px;
-
-    &--bottom{
-        bottom: inherit;
-        top: 40%;
-    }
 }
 
 .valeur{
@@ -205,13 +200,18 @@ p{
   width: 100vw;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 
 }
 .mockup{
+    height: 70%;
     width: 100%;
+    background-image: url(../assets/images/mockup-mobile@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 footer ul{
