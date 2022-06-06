@@ -213,3 +213,37 @@ p{
 .mockup{
     width: 100%;
 }
+
+footer ul{
+    margin: 0;
+}
+footer a{
+    padding: 5px 16px;
+    color: $blanc;
+    text-decoration: underline $mauve;
+}
+footer a:hover{
+    background-color: $mauve;
+    text-decoration: none;
+}
+footer {
+    padding: 16px;
+    background-color: $vignette;
+}
+
+.dwt-span{
+    display: none;
+}
+.dwt-logo{
+    height: 25px;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    &__el{
+        margin-bottom: 11px;
+    }
+}
