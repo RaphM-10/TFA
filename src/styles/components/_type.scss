@@ -1,10 +1,17 @@
 body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $blanc;
 }
 
 .title {
-  color: $c-alt;
+  font-family: 'carol-gothic', sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  font-style: normal;
+}
+
+a{
+  font-size: 19px;
 }

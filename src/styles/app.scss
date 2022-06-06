@@ -1,2 +1,87 @@
 @import 'utils/variables';
 @import 'components/type';
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: $noir;
+}
+
+.home{
+    padding: 16px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-logo{
+    text-indent: -9999px;
+    overflow: hidden;
+    background-image: url(../assets/images/logo@2x.png);
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25%;
+    width: 100%;
+}
+
+.home-element{
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    &--top{
+        top: 64px;
+        left: 36px;
+        display: flex;
+        align-items: end;
+    }
+    &--bottom{
+        bottom: 64px;
+        right: 36px; 
+        display: flex;
+    }
+}
+
+.home-element--top::after{
+    content: '';
+    background-image: url('../assets/images/corner2.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 32px;
+    height: 32px;
+    width: 48px;
+    margin-top: 11px;
+}
+.home-element--bottom::before{
+    content: '';
+    background-image: url('../assets/images/corner2.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 32px;
+    height: 32px;
+    width: 48px;
+    margin-bottom: 11px;
+    transform: rotate(180deg);
+}
+.bouton{
+    background-color: $mauve;
+    color: $blanc;
+    border: none;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 48px;
+}
