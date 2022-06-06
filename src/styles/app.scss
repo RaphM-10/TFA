@@ -99,6 +99,11 @@ p{
     text-decoration: none;
     position: absolute;
     bottom: 48px;
+
+    &--bottom{
+        bottom: inherit;
+        top: 40%;
+    }
 }
 
 .valeur{
@@ -193,4 +198,18 @@ p{
     padding-top: 208px;
     margin-top: 96px;
     box-shadow: 0px 24px 42px #000000;
+}
+
+.download {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+
+}
+.mockup{
+    width: 100%;
 }
