@@ -21,3 +21,24 @@ a{
   font-size: 23px;
   font-weight: 400;
 }
+
+@media (min-width : 400px) {
+
+  body{
+    font-size: 18px;
+  }
+  
+  a{
+    font-size: 22px;
+  }
+
+  .title{
+    font-size: 77px;
+  }
+
+  h3{
+    font-size: 31px;
+    text-decoration: underline $mauve;
+  }
+
+}

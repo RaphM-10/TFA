@@ -101,6 +101,10 @@ p{
     bottom: 48px;
 }
 
+.bouton:hover{
+    background-color: #581CFBB3;
+}
+
 .valeur{
     display: flex;
     justify-content: center;
@@ -125,6 +129,7 @@ p{
     height: 60vh;
     margin: auto;
     margin-bottom: 160px;
+    margin-top: 80px;
 }
 .valeur-list__el{
     margin: 48px 0px;
@@ -283,5 +288,41 @@ footer {
     list-style: none;
     &__el{
         margin-bottom: 11px;
+    }
+}
+
+@media (min-width : 400px) {
+    .home-logo{
+        height: 20%;
+    }
+
+    .bouton{
+        bottom: 106px;
+    }
+
+    .space{
+        padding: 18px;
+    }
+    .home-element--top::after, .home-element--bottom::before{
+        background-image: url(../assets/images/corner4.svg);
+    }
+    .ombre::after{
+        right: 18px;
+        background-image: url(../assets/images/corner4.svg);
+    }
+    .list-el__title{
+        margin-right: 18px;
+    }
+    p{
+        margin-bottom: 36px;
+    }
+    h3{
+        margin-bottom: 18px;
+    }
+    .valeur-list__el{
+        margin: 90px 0px;
+    }
+    .compo{
+        gap: 106px 18px;
     }
 }
