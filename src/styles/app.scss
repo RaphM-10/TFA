@@ -481,12 +481,12 @@ footer {
         justify-content: center; 
         align-content: center; 
         justify-items: center; 
-        align-items: center;  
+        align-items: end;  
       }
     .sac { grid-area: 1 / 1 / 2 / 2; }
     .trousse { grid-area: 1 / 2 / 2 / 4; }
     .jupe { grid-area: 2 / 1 / 4 / 3; }
-    .cors { grid-area: 3 / 3 / 4 / 4; }
+    .cor { grid-area: 3 / 3 / 4 / 4; }
     
     .avis-title{
         margin-left: 90px;
@@ -498,6 +498,24 @@ footer {
         width: 40%;
         padding: 20px;
         height: 100%;
+    }
+    .mockup{
+        height: 100%;
+    }
+    .button--bottom{
+        bottom: -40px;
+    }
+    .bouton {
+        bottom: -80px;
+    }
+    .avis-picture {
+        height: 150px;
+    }
+    .vignette{
+        margin-top: 0px;
+    }
+    .photo {
+        width: 50%;
     }
 
     
