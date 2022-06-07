@@ -291,7 +291,7 @@ footer {
     }
 }
 
-@media (min-width : 400px) {
+@media (min-width : 380px) {
     .home-logo{
         height: 20%;
     }
@@ -326,3 +326,183 @@ footer {
         gap: 106px 18px;
     }
 }
+
+@media (min-width : 600px) {
+    p{
+        margin-bottom: 40px;
+    }
+    .home-element--top::after{
+        height: 80px;
+        width: 140px;
+        margin-top: 40px;
+        background-size: contain;
+    }
+    .home-element--bottom::before{
+        background-size: contain;
+        height: 80px;
+        width: 140px;
+        margin-bottom: 40px;
+    }
+    .home-element--top::after, .home-element--bottom::before{
+        background-image: url(../assets/images/corner2.svg);
+    }
+    .ombre::after{
+        right: 18px;
+        height: 60px;
+        width: 80px;
+        background-size: contain;
+        background-image: url(../assets/images/corner2.svg);
+        bottom: -25px;
+    }
+    .home-element--top{
+        top: 100px;
+        left: 60px;
+    }
+    .home-element--bottom{
+        bottom: 100px;
+        right: 60px;
+    }
+    .bouton {
+        bottom: 220px;
+        padding: 15px 80px;
+    }
+    .list-el__texte{
+        width: 45%;
+        margin-left: 35%
+    }
+    .space{
+        padding: 40px;
+    }
+    .valeur-list{
+        margin-right: 60px;
+    }
+    .ombre::before{
+        top: 20px;
+        -webkit-text-stroke: 2px $mauve;
+    }
+    .valeur-list__el {
+        margin: 140px 0px;
+    }
+    .list-el__title {
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    .compo {
+        gap: 200px 20px;
+        margin-top: 400px;
+    }
+    .photo {
+        width: 80%;
+    }
+    .photo--cor{
+        width: 70%;
+    }
+    .photo--sac {
+        bottom: 140px;
+    }
+    .vignette{
+        margin-top: 200px;
+    }
+    .photo--jupe {
+        bottom: 120px;
+    }
+    .nav-avis__el {
+        margin: 40px 60px;
+        padding: 60px;
+    }
+    .mockup {
+        height: 80%;
+    }
+    .bouton--bottom{
+        bottom: 120px;
+    }
+    footer{
+        padding: 60px;
+
+    }
+    .footer-list__el {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width : 1100px) {
+
+    .home-element--top::after {
+        height: 80px;
+        width: 100px;
+    }
+    .home-logo {
+        height: 30%;
+    }
+    .home-element--bottom::before{
+        width: 100px;
+        height: 80px;
+    }
+    .bouton{
+        bottom: 60px;
+    }
+    .valeur {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+    .valeur-content{
+        width: 60%;
+    }
+    .ombre::after {
+        right: 20px;
+        height: 60px;
+        width: 80px;
+        bottom: -25px;
+    }
+    .valeur-list {
+        margin-right: 60px;
+    }
+    .valeur-list__el {
+        margin: 80px 0px;
+    }
+    .valeur-mockup{
+        height: 80%;
+    }
+    .list-el__texte {
+        width: 75%;
+        margin-left: 20%;
+    }
+
+    .compo {
+        height: 100vh;
+        display: grid; 
+        grid-auto-flow: column dense; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1.5fr 1fr; 
+        gap: 80px 40px; 
+        justify-content: center; 
+        align-content: center; 
+        justify-items: center; 
+        align-items: center;  
+      }
+    .sac { grid-area: 1 / 1 / 2 / 2; }
+    .trousse { grid-area: 1 / 2 / 2 / 4; }
+    .jupe { grid-area: 2 / 1 / 4 / 3; }
+    .cors { grid-area: 3 / 3 / 4 / 4; }
+    
+    .avis-title{
+        margin-left: 90px;
+    }
+    .nav-avis{
+        flex-direction: row;
+    }
+    .nav-avis__el{
+        width: 40%;
+        padding: 20px;
+        height: 100%;
+    }
+
+    
+}
+
+
+
+
