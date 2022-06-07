@@ -45,7 +45,7 @@ p{
 .home-logo{
     text-indent: -9999px;
     overflow: hidden;
-    background-image: url(../assets/images/logo@2x.png);
+    background-image: url(../assets/images/logo.png);
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,6 +99,7 @@ p{
     text-decoration: none;
     position: absolute;
     bottom: 48px;
+    cursor: pointer;
 }
 
 .bouton:hover{
@@ -109,6 +110,7 @@ p{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 .ombre{
     position: relative;
@@ -251,7 +253,7 @@ p{
 .mockup{
     height: 70%;
     width: 100%;
-    background-image: url(../assets/images/mockup-mobile2-1@2x.png);
+    background-image: url(../assets/images/mockup-mobile2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -320,7 +322,7 @@ footer {
         margin-bottom: 18px;
     }
     .valeur-list__el{
-        margin: 90px 0px;
+        margin: 126px 0px;
     }
     .compo{
         gap: 106px 18px;
@@ -439,7 +441,8 @@ footer {
         height: 80px;
     }
     .bouton{
-        bottom: 60px;
+        bottom: 120px;
+        padding: 8px 60px;
     }
     .valeur {
         display: flex;
@@ -477,7 +480,7 @@ footer {
         grid-auto-flow: column dense; 
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1.5fr 1fr; 
-        gap: 80px 40px; 
+        gap: 140px 40px; 
         justify-content: center; 
         align-content: center; 
         justify-items: center; 
@@ -505,7 +508,7 @@ footer {
     .button--bottom{
         bottom: -40px;
     }
-    .bouton {
+    .bouton--bottom {
         bottom: -80px;
     }
     .avis-picture {
@@ -519,6 +522,15 @@ footer {
     }
 
     
+}
+
+@media(-webkit-min-device-pixel-ratio: 2){
+    .home-logo{
+        background-image: url(../assets/images/logo@2x.png);
+    }
+    .mockup{
+        background-image: url(../assets/images/mockup-mobile2-2@3x.png);
+    }
 }
 
 
