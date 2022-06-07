@@ -430,15 +430,15 @@ footer {
 @media (min-width : 1100px) {
 
     .home-element--top::after {
-        height: 80px;
-        width: 100px;
+        height: 40px;
+        width: 70px;
     }
     .home-logo {
         height: 30%;
     }
     .home-element--bottom::before{
-        width: 100px;
-        height: 80px;
+        width: 70px;
+        height: 40px;
     }
     .bouton{
         bottom: 120px;
@@ -456,8 +456,8 @@ footer {
     }
     .ombre::after {
         right: 20px;
-        height: 60px;
-        width: 80px;
+        height: 40px;
+        width: 70px;
         bottom: -25px;
     }
     .valeur-list {
