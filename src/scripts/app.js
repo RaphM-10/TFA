@@ -50,11 +50,11 @@ gsap.from(".list-el__texte--2", {
     }
 });
 
-gsap.from(".photo--sac", {
+gsap.from(".photo--1", {
     scale:0.9,
     opacity: 0,
     scrollTrigger: {
-        trigger:".photo--sac",
+        trigger:".photo--1",
         start: "60% 75%",
         end: "60% 25%",
         toggleActions: "play pause reverse reset",
@@ -62,11 +62,11 @@ gsap.from(".photo--sac", {
     }
 });
 
-gsap.from(".photo--trousse", {
+gsap.from(".photo--2", {
     scale:0.9,
     opacity: 0,
     scrollTrigger: {
-        trigger:".photo--trousse",
+        trigger:".photo--2",
         start: "60% 75%",
         end: "60% 25%",
         toggleActions: "play pause reverse reset",
@@ -74,11 +74,11 @@ gsap.from(".photo--trousse", {
     }
 });
 
-gsap.from(".photo--jupe", {
+gsap.from(".photo--3", {
     scale:0.9,
     opacity: 0,
     scrollTrigger: {
-        trigger:".photo--jupe",
+        trigger:".photo--3",
         start: "60% 75%",
         end: "60% 25%",
         toggleActions: "play pause reverse reset",
@@ -86,11 +86,11 @@ gsap.from(".photo--jupe", {
     }
 });
 
-gsap.from(".photo--cor", {
+gsap.from(".photo--4", {
     scale:0.9,
     opacity: 0,
     scrollTrigger: {
-        trigger:".photo--cor",
+        trigger:".photo--4",
         start: "60% 75%",
         end: "60% 25%",
         toggleActions: "play pause reverse reset",
@@ -124,4 +124,57 @@ gsap.from(".mockup", {
     }
 });
 
+let photoVignette = document.querySelectorAll('.photo');
+let texteVignette = document.querySelectorAll('.vignette__texte'); 
+
+// var tableauVignette = [
+//     ['./assets/images/sac.png', './assets/images/sac@2x.png 2x', 'Sac totebag'],
+//     ['./assets/images/trousse.png', './assets/images/trousse@2x.png 2x', 'Trousse'],
+//     ['./assets/images/jupe.png', './assets/images/jupe@2x.png 2x', 'Jupe portefeuille'],
+//     ['./assets/images/cor.png', './assets/images/cor@2x.png 2x', 'Corset sans bretelles']
+// ];
+// var usedNumber = [0,1,2,3];
+// var numberVignette;
+// for (let i = 0; i < photoVignette.length; i++){
+//     numberVignette = Math.floor(Math.random()*(usedNumber.length+1));
+//     console.log(tableauVignette[usedNumber[numberVignette]]);
+//     usedNumber.splice(-numberVignette,1);
+//     // if(i==0){
+//     //     usedNumber.push(numberVignette);
+//     // }
+
+//     // else{
+//     //     usedNumber.forEach(number => {
+//     //         if(numberVignette == number){
+                
+//     //             do{
+//     //                 numberVignette = Math.floor(Math.random()*4);
+//     //             }while(numberVignette == number);
+
+//     //         };
+//     //     });
+//     //     usedNumber.push(numberVignette);
+//     // };
+// };
+// // console.log(usedNumber);
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min;
+};
+
+
+var dejaAfficher = [];
+var tableauVignette = [{source : './assets/images/sac.png', sourceset : './assets/images/sac@2x.png 2x', text : 'Sac totebag'},{source : './assets/images/trousse.png', sourceset : './assets/images/trousse@2x.png 2x', text : 'Trousse'},{source : './assets/images/jupe.png', sourceset : './assets/images/jupe@2x.png 2x', text : 'Jupe portefeuille'},{source : './assets/images/cor.png', sourceset : './assets/images/cor@2x.png 2x', text : 'Corset sans bretelles'}];
+
+for(let i=0; i<4; i++){
+    do{
+        var nombreAleatoire = getRandomIntInclusive(0, 3);
+    }while(dejaAfficher.includes(nombreAleatoire));
+    photoVignette[i].setAttribute("src",tableauVignette[nombreAleatoire].source);
+    photoVignette[i].setAttribute("srcset",tableauVignette[nombreAleatoire].sourceset);
+    texteVignette[i].innerHTML=tableauVignette[nombreAleatoire].text;
+    dejaAfficher.push(nombreAleatoire);
+    console.log(dejaAfficher);
+}
 
