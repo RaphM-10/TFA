@@ -7,12 +7,17 @@ body {
 }
 
 .title {
-  font-family: 'carol-gothic', sans-serif;
+  font-family: linotype-didot, serif;
   font-weight: 400;
-  font-size: 69px;
   font-style: normal;
+  font-size: 69px;
+    &__cs{
+      text-align: center;
+    }
 }
-
+.list-el__title{
+  font-weight: 500;
+}
 a{
   font-size: 19px;
 }

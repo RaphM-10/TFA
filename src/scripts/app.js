@@ -127,36 +127,6 @@ gsap.from(".mockup", {
 let photoVignette = document.querySelectorAll('.photo');
 let texteVignette = document.querySelectorAll('.vignette__texte'); 
 
-// var tableauVignette = [
-//     ['./assets/images/sac.png', './assets/images/sac@2x.png 2x', 'Sac totebag'],
-//     ['./assets/images/trousse.png', './assets/images/trousse@2x.png 2x', 'Trousse'],
-//     ['./assets/images/jupe.png', './assets/images/jupe@2x.png 2x', 'Jupe portefeuille'],
-//     ['./assets/images/cor.png', './assets/images/cor@2x.png 2x', 'Corset sans bretelles']
-// ];
-// var usedNumber = [0,1,2,3];
-// var numberVignette;
-// for (let i = 0; i < photoVignette.length; i++){
-//     numberVignette = Math.floor(Math.random()*(usedNumber.length+1));
-//     console.log(tableauVignette[usedNumber[numberVignette]]);
-//     usedNumber.splice(-numberVignette,1);
-//     // if(i==0){
-//     //     usedNumber.push(numberVignette);
-//     // }
-
-//     // else{
-//     //     usedNumber.forEach(number => {
-//     //         if(numberVignette == number){
-                
-//     //             do{
-//     //                 numberVignette = Math.floor(Math.random()*4);
-//     //             }while(numberVignette == number);
-
-//     //         };
-//     //     });
-//     //     usedNumber.push(numberVignette);
-//     // };
-// };
-// // console.log(usedNumber);
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
