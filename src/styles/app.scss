@@ -237,7 +237,8 @@ p{
 }
 
 .avis-picture{
-    width: 50%;
+    max-height: 250px;
+    max-width: 80%;
 }
 
 
@@ -348,6 +349,12 @@ footer {
 .img-cs--list{
     margin-top: inherit;
     max-height: 400px;
+}
+.vid-cs{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: 36px auto;
+    width: 300px;
 }
 
 @media (min-width : 380px) {
@@ -497,6 +504,10 @@ footer {
     .img-cs--list{
         display: block;
     }
+    .vid-cs{
+        width: 500px;
+        height: 400px;
+    }
 }
 
 @media (min-width : 1100px) {
@@ -547,8 +558,8 @@ footer {
     }
 
     .compo {
-        max-width: 1440px;
-        margin: auto;
+        max-width: 1100px;
+        margin: 50vh auto;
         height: 100vh;
         display: grid; 
         grid-auto-flow: column dense; 
@@ -585,14 +596,17 @@ footer {
     .bouton--bottom {
         bottom: -80px;
     }
-    .avis-picture {
-        height: 150px;
-    }
     .vignette{
         margin-top: 0px;
     }
     .photo {
-        width: 50%;
+        width: 40%;
+        &--1{
+            width: 80%;
+        }
+        &--4{
+            width: 80%;
+        }
     }
     .main-cs p{
         margin-right: 4em;
